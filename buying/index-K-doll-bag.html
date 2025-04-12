@@ -192,9 +192,9 @@
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(postData).toString()
     }).then(() => {
-      window.location.href = "done.html";
+      window.location.href = "../done.html";
     }).catch(() => {
-      window.location.href = "error.html";
+      window.location.href = "../error.html";
     });
 
     }
