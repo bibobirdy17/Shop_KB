@@ -156,6 +156,10 @@
         }
 
       const name = document.getElementById("name").value.trim();
+      // 儲存使用者資料
+      localStorage.setItem("savedEmail", email);
+      localStorage.setItem("savedName", name);
+
       const amount = document.getElementById("amount").value.trim();
       const bank = document.getElementById("bank").value.trim();
       const time = document.getElementById("time").value.trim();
@@ -207,6 +211,19 @@
     });
 
     }
+  // ✅ 在頁面載入時，自動填入已儲存的資料
+    window.addEventListener("DOMContentLoaded", () => {
+      const savedEmail = localStorage.getItem("savedEmail");
+      const savedName = localStorage.getItem("savedName");
+      const savedBank = localStorage.getItem("savedBank");
+      const savedTime = localStorage.getItem("savedTime");
+
+      if (savedEmail) document.getElementById("email").value = savedEmail;
+      if (savedName) document.getElementById("name").value = savedName;
+      if (savedBank) document.getElementById("bank").value = savedBank;
+      if (savedTime) document.getElementById("time").value = savedTime;
+    });
+
   </script>
 </body>
 </html>
