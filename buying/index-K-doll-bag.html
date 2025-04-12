@@ -161,18 +161,17 @@
       /* 需要更改的地方2 */
       const cards = document.querySelectorAll(".product-card");
       const productData = [
-        { name: "生日賀卡", entry: "entry.785460861", card: cards[0] },
-        { name: "生日房子", entry: "entry.1636083681", card: cards[1] }
+        { name: "柚吧娃包", entry: "entry.1435832925", card: cards[0] },
       ];
 
       const postData = {
-        "entry.579974855": email,
-        "entry.1462259305": name,
-        "entry.1589204693": amount,
-        "entry.296015576": bank,
-        "entry.1897172134": time,
-        "entry.1592013770": agree,
-        "entry.612954493": document.getElementById("total-price").innerText
+        "entry.1987137853": email,
+        "entry.195970410": name,
+        "entry.1644445805": amount,
+        "entry.1827276483": bank,
+        "entry.161339168": time,
+        "entry.1495098578": agree,
+        "entry.1094702615": document.getElementById("total-price").innerText
       };
       /* 需要更改的地方2end */
 
@@ -188,7 +187,7 @@
       });
 
       /* 需要更改的地方3 */
-      fetch("https://docs.google.com/forms/d/1aV4COPNI1E4227k3aEOynwPrCuJH6J0M3MxajrheeK8/formResponse", {
+      fetch("https://docs.google.com/forms/d/1HI8zGlnStFJj3r9Clc8w-dWxI0sce2hU01rG9cIjcIo/formResponse", {
       method: "POST",
       mode: "no-cors",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
