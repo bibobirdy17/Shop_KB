@@ -10,16 +10,27 @@
       font-family: 'Noto Sans TC', sans-serif;
       margin: 0;
       padding: 0;
-      background-image: url('image/home/done.jpg');/* ← 這裡換成你圖片的路徑 */
-      background-size: cover;
-      background-position: center;
+      background-image: url('image/home/done.jpg');
+      background-size: contain;
       background-repeat: no-repeat;
+      background-position: center;
       background-attachment: fixed;
+      background-color: #f3f3f3;
+
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
     }
+
+    @media (min-aspect-ratio: 3/2) {
+      body {
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+
 
     .content-box {
       background-color: rgba(255, 255, 255, 0.5); /* 半透明白背景讓文字清晰 */
