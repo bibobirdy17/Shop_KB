@@ -8,32 +8,72 @@
   <style>
     body {
       font-family: 'Noto Sans TC', sans-serif;
-      padding: 60px 20px;
-      text-align: center;
-      background: #f9f9f9;
-      color: #333;
+      margin: 0;
+      padding: 0;
+      background-image: url('image/home/done.jpg');/* ← 這裡換成你圖片的路徑 */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
+
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.88); /* 半透明白背景讓文字清晰 */
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    }
+
     h1 {
       font-size: 28px;
       color: #2c7c44;
+      margin-bottom: 20px;
     }
+
     p {
-      font-size: 20px;
-      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      margin-top: 10px;
     }
+
     a {
       color: #6e46ae;
       text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #6e46ae;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #543594;
     }
   </style>
 </head>
 <body>
-  <h1>✅ 訂單已成功送出</h1>
-  <p>請檢查您的信箱內是否有收到訂單確認信~若沒有的話可能在垃圾信件內!</p>
-  <p>感謝您的購買，Arwen 會盡快處理您的訂單 🙏</p>
-  <p><a href="https://docs.google.com/spreadsheets/d/1KaV443TtOSrep1rvxfOiZ21VuobxED-zyMd7eUVmock/edit?usp=sharing" target="_blank">點我查看對帳表</a></p>
-  
-  <a href="index.html" class="btn">返回首頁</a>
-
+  <div class="content-box">
+    <h1>✅ 訂單已成功送出</h1>
+    <p>請檢查您的信箱內是否有收到訂單確認信～若沒有的話可能在垃圾信件內！</p>
+    <p>感謝您的購買，Arwen 會盡快處理您的訂單 🙏</p>
+    <p><a href="https://docs.google.com/spreadsheets/d/1KaV443TtOSrep1rvxfOiZ21VuobxED-zyMd7eUVmock/edit?usp=sharing" target="_blank">📄 點我查看對帳表</a></p>
+    <a href="index.html" class="btn">🔙 返回首頁</a>
+  </div>
 </body>
 </html>
